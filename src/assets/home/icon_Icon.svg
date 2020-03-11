@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6FBFFF" offset="0%"></stop>
+            <stop stop-color="#3C8BFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Business-Feature-/-Style-03">
+            <g id="Icon">
+                <g id="Smooth-Corner-BG/Blue" fill="url(#linearGradient-1)">
+                    <path d="M37,0 C57.4345357,-3.75376332e-15 74,16.5654643 74,37 C74,57.4345357 57.4345357,74 37,74 C16.5654643,74 2.50250888e-15,57.4345357 0,37 C-2.50250888e-15,16.5654643 16.5654643,3.75376332e-15 37,0 Z" id="Rectangle-2"></path>
+                </g>
+                <g id="Icon/24/Archive" transform="translate(25.000000, 25.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="archive" transform="translate(1.000000, 3.000000)">
+                        <polyline id="Shape" stroke-width="2" points="20 5 20 18 2 18 2 5"></polyline>
+                        <rect id="Rectangle-path" stroke-width="2" x="0" y="0" width="22" height="5"></rect>
+                        <path d="M9,9 L13,9" id="Shape" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

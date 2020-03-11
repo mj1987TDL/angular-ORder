@@ -1,0 +1,49 @@
+<div class="container bg-light" >
+    
+    <div class="row" style="width: 100%;">
+    <div class="col-md-6">
+    <div *ngFor="let product of productids;let i = index" class="col-md-11 mb-4 ml-2" style="height: 200px;border: 1px solid gray;">
+        {{product.name}}<br />
+        <img src="https://images.youracclaim.com/size/340x340/images/89ca1ec4-2df8-4ed8-a399-263946a2a272/de19749d89cad6357838f495045807330b165457.png" width="120px" class="mt-2 mb-2">
+        &nbsp;&nbsp;&nbsp; Price : {{product.price}}
+        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+        <input type="number"  id="quantity" value="1" min="0" (change)="calculateTotal($event,product)">
+        <button class="btn-warning" (click)="removeItem(product)">Remove Item</button>
+       </div> 
+    </div>
+    <div class="col-md-6 mt-3">
+
+        <h2>Total Calculation</h2>
+        <table style="border: 1px solid black;" cellpadding="20"  width="100%">
+            <tr style="border: 1px solid black;">
+                <td colspan="3">Price Details</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Price ({{productids.length}}) 
+                    </td>
+                    <td colspan="2" align="right">
+                        {{grandTotal|currency:'INR'   }}
+                    </td>
+                  </tr> 
+                  <tr>
+                    <td>
+                        Delivery
+                    </td>
+                    <td colspan="2" align="right">
+                       FREE
+                    </td>
+                  </tr> 
+                  <tr style="border: 1px solid black;">
+                    <td>
+                        Grand Total
+                    </td>
+                    <td colspan="2" align="right">
+                        {{grandTotal|currency:'INR'   }}
+                    </td>
+                  </tr> 
+            </table>
+     </div>
+    </div>
+</div>

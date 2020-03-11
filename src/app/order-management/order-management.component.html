@@ -1,0 +1,90 @@
+<div class="container-fluid" >
+
+    
+    <div class="row no-gutters pb-5" style="width: 100%;margin-top:50px" >
+        <div class="col-md-7 pb-4" width="60%" >
+
+        <table #dt cellpadding="10"   width="70%">
+                <tr class="iams_table_header_bg iams_font iams_table_header_font pt-3 pb-2">
+                    <th style="width:8%">Order ID</th>
+                    <th style="width:12%">Order Name</th>
+                    <th style="width:8%">Order Quantity</th>
+                    <th style="width:8%">Created By</th>
+                    <th style="width:10%">Created On</th>
+                    <th style="width:10%">Edit</th>
+
+                     </tr>
+
+                <tr style='font-size: 0.8em' *ngFor="let orderLists of orderList">
+                    <td style="word-wrap:break-word">{{orderLists.orderid}}</td>
+                    <td style="word-wrap:break-word">{{orderLists.ordername}}</td>
+                    <td style="word-wrap:break-word">{{orderLists.orderQuantity}}</td>
+                    <td style="word-wrap:break-word">{{orderLists.name}}</td>
+                    <td style="word-wrap:break-word">{{orderLists.orderon | date: 'dd/MM/yyyy'}}</td>
+                    <td style="word-wrap:break-word"><button class="btn btn-primary" (click)="updateorder(orderLists)">Update Order</button></td>
+                    </tr>
+       
+        </table>
+
+   
+    </div>  
+    <div class="col-md-1" *ngIf="!isupdate">
+        <button (click)="createOrders()">Create Order</button>
+        </div>
+        <div class="col-md-3" *ngIf="createOrder">
+            <form [formGroup]="orderRecord" (ngSubmit)="onSubmit()">
+                <div class="form-group row" style="border-bottom: 3px solid cornflowerblue;padding: 0%">
+                        <h5>Create New Order</h5>
+                 </div>
+                 <div class="form-group col-md-10" style="text-align:left">
+                    <label>Order Name</label>
+                    <input  type="text" size="30" formControlName="ordername" class="form-control"  />
+                    <div *ngIf="submitted && f.ordername.errors" class="invalid-feedback">
+                        <div *ngIf="f.ordername.errors.required">order name is required</div>
+                        </div>
+              </div>
+
+              <div class="form-group col-md-10" style="text-align:left">
+                <label>Order Quantity</label>
+                <input  type="text" numbersOnly size="30" formControlName="orderQuantity" class="form-control"  />
+                <div *ngIf="submitted && f.orderQuantity.errors" class="invalid-feedback">
+                    <div *ngIf="f.orderQuantity.errors.required">order name is required</div>
+                    </div>
+          </div>
+
+              <div class="form-group col-md-10" style="top:50%;text-align: center; ">
+                <button class="btn btn-primary">Create Order</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click)="cancel()">Cancel</button>
+                </div>
+                 </form>
+        </div>
+
+        <div class="col-md-3" *ngIf="isupdate">
+            <form [formGroup]="orderRecord" (ngSubmit)="onSubmitUpdate()">
+                <div class="form-group row" style="border-bottom: 3px solid cornflowerblue;padding: 0%">
+                        <h5>Update Order</h5>
+                 </div>
+                 <div class="form-group col-md-10" style="text-align:left">
+                    <label>Order Name</label>
+                    <input  type="text" size="30" formControlName="ordername" class="form-control"  />
+                    <div *ngIf="submitted && f.ordername.errors" class="invalid-feedback">
+                        <div *ngIf="f.ordername.errors.required">order name is required</div>
+                        </div>
+              </div>
+
+              <div class="form-group col-md-10" style="text-align:left">
+                <label>Order Quantity</label>
+                <input  type="text" numbersOnly size="30" formControlName="orderQuantity" class="form-control"  />
+                <div *ngIf="submitted && f.orderQuantity.errors" class="invalid-feedback">
+                    <div *ngIf="f.orderQuantity.errors.required">order name is required</div>
+                    </div>
+          </div>
+
+              <div class="form-group col-md-10" style="top:50%;text-align: center; ">
+                <button class="btn btn-primary">Update Order</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click)="cancelUpdate()">Cancel Update</button>
+                </div>
+                 </form>
+        </div>
+</div>    
+</div>    

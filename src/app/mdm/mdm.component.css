@@ -1,0 +1,10 @@
+.bgimage{
+  background-image: url('/assets/home/wave.png'),url('/assets/home/wave 2 copy.svg'),url('/assets/home/element.png'),url('/assets/home/wave2.png');;
+  background-repeat: no-repeat; 
+  background-size: 400px,150px,700px,250px;
+  background-position: left top,right top,bottom center,right 300px;
+}
+.label
+{
+    margin-bottom: 3px !important;
+}

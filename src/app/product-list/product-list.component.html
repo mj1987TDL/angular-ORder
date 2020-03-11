@@ -1,0 +1,27 @@
+
+  <div class="container bg-light" >
+    
+    <div class="row" style="width: 100%;">
+      <div class="col-md-12 pb-2 mb-3" >
+        Sort By: 
+        <button (click)="sorting()">Price low to High</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="sortingHigh()">Price High to low</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Select Price Range:&nbsp;&nbsp;&nbsp;
+      <span>300</span><input type="range" title="{{myRange.value}}" min="300" max="5000"  (click)="filterProducts($event)" range="true" data-slider-value="[250,2000]" class="slider mt-2" #myRange><span >5000</span>
+
+      
+       
+       </div>
+        <div *ngFor="let product of products" class="col-md-3 mb-4 ml-2" style="height: 200px;border: 1px solid gray;">
+          {{product.name}}<br />
+          <img src="../../assets/index.jpg" width="80px" class="mt-2 mb-2">
+          &nbsp;&nbsp;&nbsp; Price : {{product.price}}
+          <br />
+
+          <button (click)="addtocart(product)">Add to Cart</button>
+
+
+        </div>
+    </div>    
+
+</div>

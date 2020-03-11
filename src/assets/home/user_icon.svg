@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>user_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ink-Order-Copy-50" transform="translate(-182.000000, -110.000000)">
+            <g id="Profile" transform="translate(157.000000, 111.000000)">
+                <g id="user_icon" transform="translate(26.000000, 0.000000)">
+                    <ellipse id="oval" stroke="#90A4AE" cx="31.7117117" cy="31.7513514" rx="31.7117117" ry="31.7513514"></ellipse>
+                    <path d="M31.6756757,36.0328121 C37.2054054,36.0328121 41.7297297,31.4974564 41.7297297,25.9542439 C41.7297297,20.4110314 37.2054054,15.8756757 31.6756757,15.8756757 C26.1459459,15.8756757 21.6216216,20.4110314 21.6216216,25.9542439 C21.6216216,31.4974564 26.1459459,36.0328121 31.6756757,36.0328121 L31.6756757,36.0328121 L31.6756757,36.0328121 Z" id="shape" stroke="#90A4AE" fill="#90A4AE"></path>
+                    <path d="M32,62.4145685 C45.254834,62.4145685 53.7078598,58.0450036 56,52.065 C58.2921402,46.0849964 45.254834,40.05 32,40.05 C18.745166,40.05 6.28787879,45.4682227 8,52.065 C9.71212121,58.6617773 18.745166,62.4145685 32,62.4145685 Z" id="Oval-2" fill="#90A4AE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

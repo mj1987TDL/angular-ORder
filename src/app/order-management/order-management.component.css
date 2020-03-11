@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+ 
+.iams_bg_black{background-color: #3d81be;}
+.iams_txt_gray{color: #666666;}
+.iams_txt_gray2{color: #333333;}
+.iams_bg_drakgray{background-color: #3d81be;}
+.iams_bg_drakgray2{background-color: #333333;}
+.iams_border_top{border-top: 1px solid #2e6ba1}
+.iams_border_right{border-right: 1px solid #2e6ba1}
+.iams_border_bottom{border-bottom: 1px solid #2e6ba1}
+.iams_border_left{border-left: 1px solid #2e6ba1}
+.iams_mt_65{margin-top: 65px}
+.iams_subpage_bg{background-color: #ffffff;}
+.iams_table_header_bg{background-color: #d6d4d4;}
+.iams_table_header_font{font-size:0.8em ;}
+.iams_font{font-family: "Aleck", Arial, sans-serif;}
+.iams_logo{font-family: "Aleck", Arial, sans-serif; font-size: 1.3rem;}
+
+.mandatory{
+  color:red;
+  }
+.ui-dialog-title
+{
+  font-size: 1.4em !important;
+  margin-left: 54px;
+  font-weight: bold;
+}
+
+.iams_btn{display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  background-color:#ffffff;
+  border: 1px solid #ced4da;
+  padding: .0 .3rem .25rem .3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-transition: width 2s, height 2s; /*Safari */
+  transition: width 2s;
+  }
+  
+  .iams_btn:hover {
+  
+  color: #333;
+  background-color: #6db3f3;
+  border-color: #6db3f3;
+  cursor: pointer;
+  }
+
+ .ui-paginator {
+  text-align: right !important;
+}
+
+.ui-paginator span {
+  text-align: left !important;
+  
+}
+
+ .ui-table .ui-table-tbody > tr > td {
+  background-color: inherit;
+  border: 0px solid #c8c8c8 !important;
+} 
+
+.ui-table .ui-table-thead > tr > th  {
+  background-color: inherit;
+  border: 0px solid #c8c8c8 !important;
+}
+
+ .ui-table .ui-table-caption, .ui-table .ui-table-summary .ui-table-tbody > tr > td {
+background-color: #ffffff !important;
+border: 0px solid #ffffff !important;
+} 
+
+
+.ui-paginator{
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+margin-top: 5px !important;}
+ 
+/* --- side menu -----*/
+.ui-sidebar{border:none !important; }
+.ui-sidebar-close{display: none !important;}
+.ui-sidebar-left{padding: 0px !important; width: 235px !important;}
+.ui-widget-overlay{background-color:rgba(0, 0, 0, 0.4) !important;}
+.ui-button:enabled:hover{ background-color:#2e6ba1 !important; }
+ .ui-widget-overlay{background-color:rgba(0, 0, 0, 0.4) !important;}
+
+.ui-dropdown-label{border:1px solid #d4d4d4 !important;}
+.ui-dropdown-trigger{margin-top: 1px !important; margin-right: 1px !important; background-color: transparent !important;}
+
+.ui-paginator-rpp-options{margin-left: 10px;}
+
+ 
